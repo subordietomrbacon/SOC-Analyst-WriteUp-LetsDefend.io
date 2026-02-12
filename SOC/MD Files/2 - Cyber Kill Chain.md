@@ -106,13 +106,13 @@ to a highly authorized user account in the system via privilege escalation tacti
 This is the stage at which attack preparations are carried out to achieve the ultimate aims once the cyber attack has begun.
 ```
 ### According to the detection scenario above, in which step of the Cyber Kill Chain did the attacker fail, leading to the detection of the attack?
-> **ANSER: 4**
+> **ANWSER: 4**
 
 ## 7) Command and Control (C2)
 > The attacker can send remote commands to the system and execute them at this step.
 
 ### According to the scenario above, what is the final Cyber Kill Chain step in which the attacker succeeded?
-> **ANSER: 6**
+> **ANWSER: 6**
 
 
 ## 8) Actions on Objectives
