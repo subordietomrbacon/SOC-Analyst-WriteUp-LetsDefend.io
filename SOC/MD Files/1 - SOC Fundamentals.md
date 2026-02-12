@@ -30,7 +30,7 @@ A Security Operation Center (SOC) is a facility where the information security t
 
 Types of SOC Models
 Depending on your security needs and budget, there are several types of SOCs:
-![Image 1](SOC/Assets/SOC_Fundamentals/1.png)
+![Image 1](../Assets/SOC_Fundamentals/1.png)
 
 In-house SOC
 This team is formed when an organization builds its cybersecurity team. Organizations considering an internal SOC should have a budget to support its continuity.
@@ -117,12 +117,12 @@ Overall, SIEM products have a lot of features. The ones that interest us most as
 
 Example alert: If someone on a Windows operating system tries to enter 20 incorrect passwords in 10 seconds, this is suspicious activity. It is unlikely that someone who has forgotten their password would try to re-enter it that many times in such a short period of time. So we create a SIEM rule/filter to detect such activity that exceeds the threshold. Based on this SIEM rule, an alert will be generated when such a situation occurs.
 
-![Image 2](SOC/Assets/SOC_Fundamentals/2.png)
+![Image 2](../Assets/SOC_Fundamentals/2.png)
 
 
 Some popular SIEM solutions: IBM QRadar, ArcSight ESM, FortiSIEM, Splunk, etc. To get a better picture, you can visit the  Monitoring  page on LetsDefend.
 
-![Image 3](SOC/Assets/SOC_Fundamentals/3.png)
+![Image 3](../Assets/SOC_Fundamentals/3.png)
 
 
 Relationship Between a SOC Analyst and SIEM
@@ -132,7 +132,7 @@ As mentioned above, alerts are generated from data that passes through filters. 
 
 For a better understanding, let's go back to the "Monitoring" page; as you can see below, there are various alerts on the SIEM interface. A SOC analyst should analyze the details related to these alerts with the help of other SOC products (such as EDR, Log Management, Threat Intelligence Feed, etc.) and ultimately determine whether they are real threats or not.
 
-![Image 4](SOC/Assets/SOC_Fundamentals/4.png)
+![Image 4](../Assets/SOC_Fundamentals/4.png)
 
 
 
@@ -169,7 +169,7 @@ If you can't access the logs from one place, then the same request (e.g., the go
 
 If you go to the 'Log Management' page in LetsDefend, you will see various log sources such as Proxy, Exchange, and Firewall listed as  Type . This means that all these log sources have been collected in one place and log output from sources like Proxy, FW, etc. can be seen with just one query.
 
-![Image 5](SOC/Assets/SOC_Fundamentals/5.png)
+![Image 5](../Assets/SOC_Fundamentals/5.png)
 
 
 
@@ -201,7 +201,7 @@ Some EDR solutions commonly used in the workplace: CarbonBlack, SentinelOne, and
 
 To understand what you can do with EDR as an analyst, let's take a look at "Endpoint Security" on LetsDefend.
 
-![Image 6](SOC/Assets/SOC_Fundamentals/6.png)
+![Image 6](../Assets/SOC_Fundamentals/6.png)
 
 
 
@@ -211,20 +211,20 @@ As you can see in the image, the accessible endpoint devices are listed on the l
 
 The right side displays general information about the device and shows sections such as Browser History, Network Connections, and Process List.
 
-![Image 7](SOC/Assets/SOC_Fundamentals/7.png)
-![Image 8](SOC/Assets/SOC_Fundamentals/8.png)
+![Image 7](../Assets/SOC_Fundamentals/7.png)
+![Image 8](../Assets/SOC_Fundamentals/8.png)
 
 Live Investigation
 Next, you can click the Connect button and access the machine itself to continue the analysis.
 
-![Image 9](SOC/Assets/SOC_Fundamentals/9.png)
+![Image 9](../Assets/SOC_Fundamentals/9.png)
 
 Containment
 You need to isolate a hacked machine from the network. There are two important reasons for doing this: to prevent the attacker from connecting to the internal network and moving around the internal network.
 
 Therefore, the device should be isolated from the internal and external networks until the vulnerabilities are repaired and the device is ready for use. You can ensure isolation by using the containment feature of EDR solutions. This feature allows the selected device to communicate solely with the EDR center. This means that even though the device is isolated from the network, you can continue your analysis.
 
-![Image 10](SOC/Assets/SOC_Fundamentals/10.png)
+![Image 10](../Assets/SOC_Fundamentals/10.png)
 
 Quick Tip
 If you have any type of IOC, such as a file hash, file name, etc., you can perform a search in EDR across all hosts and see if there is a match. For example, let's say you are certain that a device has been hacked and you have obtained a file with an MD5 hash of "ac596d282e2f9b1501d66fce5a451f00". You can search for this hash value in EDR and determine whether this file exists or is being executed on other devices. This will help you understand who has been affected by this attack.
@@ -254,7 +254,7 @@ Some SOAR products commonly used in the industry:
 * Logsign
 * Demisto
 The image below shows what can be achieved with a SOAR solution.
-![Image 11](SOC/Assets/SOC_Fundamentals/11.png)
+![Image 11](../Assets/SOC_Fundamentals/11.png)
 image: hawk-eye.io
 
 The benefits of SOAR and how you can effectively use SOAR as a SOC analyst will be the focus of the rest of this lesson.
@@ -268,7 +268,7 @@ SOAR saves time with workflows that automate processes. Some common workflows ar
 * Scanning an acquired file in a sandbox environment
 Centralization (A single platform for everything you need)
 It allows you to use different security tools in your environment (sandbox, log management, 3rd party tools, etc.) by providing an all-in-one software. These tools are integrated into the SOAR solution and can be used on the same platform.
-![Image 12](SOC/Assets/SOC_Fundamentals/12.png)
+![Image 12](../Assets/SOC_Fundamentals/12.png)
 image: splunk.com
 
 
@@ -280,12 +280,12 @@ In addition, these playbooks help ensure that the entire SOC team is on the same
 
 LetsDefend and SOAR
 You can think of "Case Management" as the same as SOAR. On the SIEM (monitoring) page, you can open tickets for the cases you created. When you look at the page, the first thing you see is a list of open and closed cases.
-![Image 13](SOC/Assets/SOC_Fundamentals/13.png)
+![Image 13](../Assets/SOC_Fundamentals/13.png)
 
 
 If you click on any open case, you will see an automatically assigned playbook. You can investigate the associated SIEM (monitoring) alert following this playbook.
 
-![Image 14](SOC/Assets/SOC_Fundamentals/14.png)
+![Image 14](../Assets/SOC_Fundamentals/14.png)
 
 So far, we have covered what a SOAR solution is, how it is used in a SOC environment, and how it benefits SOC analysts in general. In the next lesson, we will explore threat intelligence and how it relates to a SOC analyst.
 
@@ -299,7 +299,7 @@ A SOC team should be immediately aware of the latest threats and take the necess
 A Threat Intelligence Feed is data (such as malware hashes, C2 (Command&Control) domain/IP addresses etc.) provided by a third party company.
 
 Looking at LetsDefend's Threat Intel page, you can see many types of data (hash, IP, etc.)
-![Image 15](SOC/Assets/SOC_Fundamentals/15.png)
+![Image 15](../Assets/SOC_Fundamentals/15.png)
 
 
 
@@ -353,7 +353,7 @@ Occasionally we see that some log analysis is not performed properly. For exampl
 Overlooking VirusTotal Dates
 If the search you performed in VirusTotal has already been queried, a result from the cache will be displayed. For example: We searched the address "letsdefend.io" in VirusTotal and the result is shown below.
 
-![Image 16](SOC/Assets/SOC_Fundamentals/16.png)
+![Image 16](../Assets/SOC_Fundamentals/16.png)
 
 
 An attacker could simply search a clean URL on VirusTotal and replace it with malicious content. This is why you should not just look at the search cache, but conduct a new search.
