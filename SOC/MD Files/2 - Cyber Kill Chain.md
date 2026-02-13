@@ -119,3 +119,15 @@ This is the stage at which attack preparations are carried out to achieve the ul
 
 ### At what stage of the Cyber Kill Chain did the APT group "Cobalt Group" use the Sdelete tool to delete data?
 > **ANSWER: 7**
+
+## Quiz
+### What is the Cyber Kill Chain step in which the ultimate assault targets are executed by the attacker?
+> **ANSWER: Actions on Objectives**
+### At what stage of the Cyber Kill Chain does the attacker create the tools to be used in the attack?
+> **ANSWER: Weaponization**
+### What is the Cyber Kill Chain phase in which the attacker connects to the target PC and gets ready to transmit commands?
+> **ANSWER: Command and Control(C2)**
+### Which initial stage of the Cyber Kill Chain involves the attacker using privilege escalation to maintain persistence on the victim's device?
+> **ANSWER: Installation**
+### What is the Cyber Kill Chain step in which the attacker installs malicious content on the victim's system prior to the exploit process?
+> **ANSWER: Delivery**
