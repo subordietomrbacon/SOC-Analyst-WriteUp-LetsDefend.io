@@ -13,8 +13,8 @@ The repository is organized into structured modules, following the SOC Analyst l
 │   ├── Assets/                      # Visual aids and screenshots used in write-ups
 │   │
 │   └── MD Files/                    # Detailed markdown write-ups for each lecture
-│       ├── 1 - SOC Fundamentals.md
-│       ├── 2 - Cyber Kill Chain.md
+│       ├── 1 - SOC Fundamentals
+│       ├── 2 - Cyber Kill Chain
 │       ├── 3 - MITRE ATT&CK Framework
 │       └── 4 - Introduction to Phishing
 ├── LICENSE                          # MIT License
