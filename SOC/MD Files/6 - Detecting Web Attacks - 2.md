@@ -111,13 +111,13 @@ Automated enumeration / brute force testing
 
 
 3. Using the regrex Method to Filtering the Log to Confirm
-![alt text](..\Assets\lab6\3.png)
+![alt text](../Assets/lab6/3.png)
 
 4. Check this User 86.236.188.85:
 + URL-encoded payloads
 + Attempting external domain injection
 + Trying path traversal / open redirect tricks 
-![alt text](..\Assets\lab6\4.png)
+![alt text](../Assets/lab6/4.png)
 
 5. Results
 
