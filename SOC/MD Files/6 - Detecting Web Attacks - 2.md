@@ -258,11 +258,144 @@ attacker needs to access some files. most popular ones are;
 
 ```
 What is Brute Forcing?
-Brute forcing is a type of attack that involves attempting to guess a password or authentication token by systematically trying every possible combination of characters until the correct one is found. In the context of web attacks, brute forcing typically refers to the process of using automated tools to repeatedly submit login requests to a web application using different username and password combinations until a valid one is discovered.
+Brute forcing is a type of attack that involves attempting to guess a password or authentication token by 
+systematically trying every possible combination of characters until the correct one is found. In the context 
+of web attacks, brute forcing typically refers to the process of using automated tools to repeatedly submit 
+login requests to a web application using different username and password combinations until a valid one is discovered.
 
-Brute force attacks can be used to gain unauthorized access to a system, steal sensitive information, or launch further attacks against the target or other systems. They can be particularly effective against weak or poorly protected passwords, but can also be very time-consuming and resource-intensive for the attacker, especially if the target system has implemented measures to detect and block brute force attacks.
+Brute force attacks can be used to gain unauthorized access to a system, steal sensitive information, or 
+launch further attacks against the target or other systems. They can be particularly effective against weak or 
+poorly protected passwords, but can also be very time-consuming and resource-intensive for the attacker, especially 
+if the target system has implemented measures to detect and block brute force attacks.
 
-Brute force attacks are one of the simplest and most straightforward methods of attacking a web application, and it works by systematically trying every possible combination of usernames and passwords until the correct one is found. This process is typically automated using specialized software or scripts, which can try thousands or even millions of combinations per second.
+Brute force attacks are one of the simplest and most straightforward methods of attacking a web application, and 
+it works by systematically trying every possible combination of usernames and passwords until the correct one is found. 
+This process is typically automated using specialized software or scripts, which can try thousands or even millions of combinations per second.
 
-The basic idea behind a brute force attack is to exploit the weak or easily guessable passwords that a lot of people use especially the non-techy users, such as common dictionary words, simple number sequences, or their own names or birthdates. By systematically trying every possible combination of characters, attackers can eventually find the correct password and gain access to the target system.
+The basic idea behind a brute force attack is to exploit the weak or easily guessable passwords that a lot of people 
+use especially the non-techy users, such as common dictionary words, simple number sequences, or their own names or birthdates. 
+By systematically trying every possible combination of characters, attackers can eventually find the correct password and 
+gain access to the target system.
 ```
+
+To Prevention Methods for Brute Forcing:
+* Implement CAPTCHA
+* Limit the rate of login attempts
+* Use multi-factor authentication (LIKE SMS CODE)
+* Monitoring login attempts
+
+
+```
+To detect brute force attacks in nginx log files, you can use various tools and techniques such as:
+
+- Log analysis tools: There are several log analysis tools such as Logstash, ElasticSearch, 
+and Kibana (ELK Stack) that can help you analyze nginx log files and detect brute force attacks. 
+These tools will allow you to search for specific patterns in the log files, such as repeated failed login attempts from the 
+same IP address or user agent.
+
+- Regular expressions: Regular expressions can be used to search for specific patterns in the log files. 
+For example, you can use a regular expression to match a sequence of repeated failed login attempts from the same IP address or user agent.
+
+- Things that you can do after the detection:
+
+- Fail2ban: Fail2ban is a popular intrusion prevention tool that can be used to automatically block the IP 
+addresses that are detected as engaging in brute force attacks. Fail2ban works by monitoring the nginx log 
+files and applying predefined filters to detect and block suspicious activity.
+
+- IP blocking: You can manually block IP addresses that are detected as engaging in brute force attacks by 
+adding them to the nginx configuration file. For example, you can use the deny rule to block traffic from specific IP addresses:
+```
+
+### Lab
+
+Here's an example of a regular expression that can be used to detect repeated failed login attempts from the same IP address in an nginx log file:
+
+/^(\S+) \S+ \S+ \[.*?\] "(POST|GET) \/login\.php.*?" (401|403) \d+ ".*?" ".*?"/gm
+
+This regular expression will match any log file entry that includes a failed login attempt 
+(401 or 403 status code) to the /login.php page. It will capture the IP address of the client making the request 
+in the first capture group ((\S+)). You can then use a log analysis tool or script to count the number of times each IP 
+address appears in the log file and flag any IP addresses that have a high number of failed login attempts as potential 
+brute force attackers. Also, you can update the regex’s IP address as suspicious IP source.
+
+### Lets Solve it!
+1. Go to  /root/Desktop/QuestionFiles/Brute-Forcing/access.log 
+
+![alt text](../Assets/lab6/8.png)
+
+2. After Deep Search we found an bruteforce attempt from this Ip 61.14.246.6 
+
+![alt text](../Assets/lab6/9.png)
+
+3. brute forcing user 146.241.73.240 
+
+![alt text](../Assets/lab6/10.png)
+
+
+#### What is the attacker's user agent?
+> **ANSWER: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.50 Safari/537.36**
+#### What is the IP address of the attacker who performed the Brute Forcing attack?
+> **ANSWER: 146.241.73.240**
+#### What date did the Brute Forcing successfully complete to login form? Format: dd/MMM/yyyy HH:mm:ss
+> **ANSWER: 26/Apr/2023 21:44:03**
+
+## 4) Detecting XML External Entity Attacks
+
+```
+What is XML External Entity?
+For a better understanding let’s quickly look at what XML is.
+
+XML (Extensible Markup Language) is a markup language that is used for structuring and storing data 
+in a structured format that is both human-readable and machine-readable. XML was developed as a 
+successor to HTML (Hypertext Markup Language) and is widely used for data exchange between different systems 
+and platforms, particularly on the web.
+
+XML uses a set of tags to define the structure and content of the data being represented. 
+These tags are used to identify and describe various elements and attributes of the data, such 
+as tags for opening and closing elements, attributes for specifying additional information about the element, 
+and entities for representing special characters and symbols.
+
+One of the key advantages of XML is its flexibility and extensibility. It is possible to define 
+custom tags and schemas for representing data, making it a powerful tool for representing complex 
+data structures and exchanging data between different systems.
+
+While XML was once widely used for a variety of purposes, its usage has declined in recent years 
+as newer data formats like JSON have gained popularity with its simplicity, ease of use, and better support 
+for modern web technologies.
+
+XXE (XML External Entity) vulnerability is a type of security vulnerability that affects applications 
+that parse XML input. In an XXE attack, an attacker injects malicious XML data into an application 
+that uses an XML parser without proper validation, which can result in the application processing external 
+entities that can be controlled by the attacker.
+
+An external entity is a piece of XML that is defined outside of the XML document, but can be referenced 
+and included within the document. An attacker can exploit an XXE vulnerability to include malicious external 
+entities that can read local files, access internal systems, or perform other malicious actions on the server.
+
+XXE vulnerabilities can be exploited in various ways, such as through web forms that accept XML input, 
+SOAP and REST APIs that use XML-based payloads, or other applications that accept and process XML input. 
+These attacks can lead to sensitive data leaks, server-side request forgery (SSRF), denial of service (DoS) attacks, 
+and other serious security issues.
+
+It is important for developers to be aware of XXE vulnerabilities and take steps to prevent them, such 
+as disabling external entities, validating and sanitizing XML input, and using secure XML parsers that 
+are specifically designed to prevent XXE attacks.
+
+```
+
+To Prevention Methods for XML External Entity:
+* Disable external entities
+* Input validation and sanitization
+* Use secure parsers
+* Use whitelist filtering
+* Implement access controls
+* Use secure coding practices
+
+#### What parameter affected XXE?
+> **ANSWER: data**
+#### What file did that attacker try to read using XXE?
+> **ANSWER: shadow**
+#### What was the attacker’s IP address?
+> **ANSWER: 94.23.33.25**
+
+# END 
