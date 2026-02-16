@@ -96,7 +96,8 @@ should be used in conjunction with other security tools and best practices.
 
 ### lets solve it :
 1. Open /root/Desktop/QuestionFiles/Open-Redirection/access.log and check All users 
-![alt text](..\Assets\lab6\1.png)
+
+![alt text](../Assets/lab6/1.png)
 
 2. this IP: 254.198.150.19 Indicators:
 * Massive repeated requests in milliseconds
@@ -106,18 +107,20 @@ should be used in conjunction with other security tools and best practices.
 What This Suggests:
 Automated enumeration / brute force testing
 
-![alt text](..\Assets\lab6\2.png)
+![alt text](../Assets/lab6/2.png)
 
 
 
 3. Using the regrex Method to Filtering the Log to Confirm
-![alt text](..\Assets\lab6\3.png)
+
+![alt text](../Assets/lab6/3.png)
 
 4. Check this User 86.236.188.85:
 + URL-encoded payloads
 + Attempting external domain injection
 + Trying path traversal / open redirect tricks 
-![alt text](..\Assets\lab6\4.png)
+
+![alt text](../Assets/lab6/4.png)
 
 5. Results
 
