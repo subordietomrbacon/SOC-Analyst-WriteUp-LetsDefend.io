@@ -37,14 +37,14 @@ during an investigation. This is especially helpful for new analysts just starti
 
  ### lets solve this chapter lab EventID: 257 - SOC282 - Phishing Alert - Deceptive Mail Detected 
  
-1. clicking into "Take Ownership button"
+1. Clicking on the "Take Ownership" button
 
 ![alt text](../Assets/lab7/1.png)
 ![alt text](../Assets/lab7/2.png)
-as we see there is a email phishing alert lets check it closely. 
+As we can see, there is a phishing email alert. Let’s check it more closely.
 
 
-2. keep playbook in a new tap cause it show us the steps to solve this lab 
+2. Keep the playbook in a new tab because it shows us the steps to solve this lab 
 
 ![alt text](../Assets/lab7/3.png)
 
@@ -62,46 +62,50 @@ we should answer the playbook Questions
 ![alt text](../Assets/lab7/1.png)
 its 103.80.134.63
 
-4. now we enter the Email Security Section from left bar to check email content 
+4. Now we enter the Email Security section from the left sidebar to check the email content 
 
 ![alt text](../Assets/lab7/4.png)
 ![alt text](../Assets/lab7/5.png)
-now we have the date that email recived and the content of the mail it has a file and the sender and recipient adresses
+Now we have the date the email was received and the content of the email.
+It includes an attached file, along with the sender and recipient addresses.
 
-5. now lets check if the file that attached is malicious file or not ,so lets download it the password is "infected" 
+5. Now let’s check if the attached file is malicious or not
+
+We download it (the password is "infected").
+
 ![alt text](../Assets/lab7/6.png)
-after extracting it windows defender shows us that its a malicious file 
+After extracting it, Windows Defender shows that it is a malicious file.
 
 ![alt text](../Assets/lab7/7.png)
-its says the file is a backdoor virus 
+It says the file is a backdoor virus.
 
-and if we upload the file "RECOMMENDED" to [virustotal](https://www.virustotal.com/) its tell us that its malicious software "trojan"
+If we upload the file (RECOMMENDED) to [virustotal](https://www.virustotal.com/) it shows that it is malicious software classified as a trojan.
 
 ![alt text](../Assets/lab7/9.png)
 
 
-6. now we have all information we need lets slart closing the alert 
+6. Now we have all the information we need. Let’s start closing the alert
 
 ![alt text](../Assets/lab7/8.png)
 ![alt text](../Assets/lab7/10.png)
 ![alt text](../Assets/lab7/11.png)
 
 
-7. lets delete the email from customer mailbox 
+7. Let’s delete the email from the customer’s mailbox 
 ![alt text](../Assets/lab7/12.png)
 
-click the delete button and right corner 
+Click the delete button in the top right corner. 
 ![alt text](../Assets/lab7/13.png)
 
 ![alt text](../Assets/lab7/14.png)
 
-8. lets contain the user machine!
+8. Let’s contain the user’s machine
 ![alt text](../Assets/lab7/15.png)
 
-9. go to the "EDR" page and contain the user machine!
+9. Go to the "EDR" page and contain the user’s machine
 
 ![alt text](../Assets/lab7/16.png)
-go to the "EDR" page and contain the user machine! by searching the victum address "172.16.20.3"
+Go to the EDR page and contain the user’s machine by searching for the victim’s address 172.16.20.3.
 
 ![alt text](../Assets/lab7/17.png)
 
@@ -124,3 +128,4 @@ true positive alert !!
 >**ANSWER: Felix@letsdefend.io**
 
 
+## 4) Email Analysis
