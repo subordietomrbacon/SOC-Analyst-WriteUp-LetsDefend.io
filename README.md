@@ -43,7 +43,8 @@ The repository is organized into structured modules, following the SOC Analyst l
 
 ## 📝 Labs Covered
 
-### [1. SOC282 - Phishing Alert](https://github.com/ogtamimi/SOC-Analyst-WriteUp-LetsDefend.io/tree/main/SOC/Labs/LetsDefend%20SOC%20Walkthrough%20-%20SOC282%20-%20Phishing Alert.md)
+## [1. SOC282 - Phishing Alert](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/Labs/LetsDefend%20SOC%20Walkthrough%20-%20SOC282%20-%20Phishing%20Alert.md)
+
 
 
 ## 📜 License
