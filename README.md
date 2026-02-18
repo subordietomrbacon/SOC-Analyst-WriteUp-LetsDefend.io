@@ -20,7 +20,8 @@ The repository is organized into structured modules, following the SOC Analyst l
 │   |   ├── 4 - Introduction to Phishing
 |   |   ├── 5 - Detecting Web Attacks
 |   |   ├── 6 - Detecting Web Attacks - 2
-|   |   └── 7 - How to Investigate a SIEM Alert 
+|   |   ├── 7 - How to Investigate a SIEM Alert 
+|   |   └── 8 - Malware Analysis Fundamentals
 |   |
 |   └── Labs
 |       |    
@@ -39,7 +40,7 @@ The repository is organized into structured modules, following the SOC Analyst l
 ### [5. Detecting Web Attacks](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/5%20-%20Detecting%20Web%20Attacks.md)
 ### [6. Detecting Web Attacks - 2](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/6%20-%20Detecting%20Web%20Attacks%20-%202.md)
 ### [7. How to Investigate a SIEM Alert](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/7%20-%20How%20to%20Investigate%20a%20SIEM%20Alert.md)
-
+### [8. Malware Analysis Fundamentals](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/8%20-%20Malware%20Analysis%20Fundamentals.md)
 
 ## 📝 Labs Covered
 
