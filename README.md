@@ -12,15 +12,19 @@ The repository is organized into structured modules, following the SOC Analyst l
 ├── SOC 
 │   ├── Assets                       # Visual aids and screenshots used in write-ups
 │   │
-│   └── MD Files                     # Detailed markdown write-ups for each lecture
-|       |
-│       ├── 1 - SOC Fundamentals
-│       ├── 2 - Cyber Kill Chain
-│       ├── 3 - MITRE ATT&CK Framework
-│       ├── 4 - Introduction to Phishing
-|       ├── 5 - Detecting Web Attacks
-|       ├── 6 - Detecting Web Attacks - 2
-|       └── 7 - How to Investigate a SIEM Alert 
+│   ├── MD Files                     # Detailed markdown write-ups for each lecture
+|   |   |
+│   |   ├── 1 - SOC Fundamentals
+│   |   ├── 2 - Cyber Kill Chain
+│   |   ├── 3 - MITRE ATT&CK Framework
+│   |   ├── 4 - Introduction to Phishing
+|   |   ├── 5 - Detecting Web Attacks
+|   |   ├── 6 - Detecting Web Attacks - 2
+|   |   └── 7 - How to Investigate a SIEM Alert 
+|   |
+|   └── Labs
+|       |    
+|       └── 1 - SOC282 - Phishing Alert
 |
 ├── LICENSE                          # MIT License
 └── README.md                        # Project overview and structure
@@ -35,6 +39,12 @@ The repository is organized into structured modules, following the SOC Analyst l
 ### [5. Detecting Web Attacks](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/5%20-%20Detecting%20Web%20Attacks.md)
 ### [6. Detecting Web Attacks - 2](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/6%20-%20Detecting%20Web%20Attacks%20-%202.md)
 ### [7. How to Investigate a SIEM Alert](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/7%20-%20How%20to%20Investigate%20a%20SIEM%20Alert.md)
+
+
+## 📝 Labs Covered
+
+### [1. SOC282 - Phishing Alert](SOC/Labs/LetsDefend SOC Walkthrough - SOC282 - Phishing Alert.md)
+
 
 ## 📜 License
 

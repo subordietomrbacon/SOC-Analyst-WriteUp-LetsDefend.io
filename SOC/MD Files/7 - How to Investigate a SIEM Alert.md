@@ -25,17 +25,17 @@ during an investigation. This is especially helpful for new analysts just starti
  * A true positive means that the alert is legitimate and requires further action,  
  * false positive means that the alert is a false alarm.
 
- #### In which channel can you take ownership of the alert?
+#### In which channel can you take ownership of the alert?
  >**ANSWER: main channel**
   #### Once you have completed the analysis of an alert, in which channel can you close the alert?
  >**ANSWER: Investigation channel**
 
- ## 3) Case Creation and Playbook Initiation
+## 3) Case Creation and Playbook Initiation
 
  Creating a case allows us to organize and track our investigation efforts, 
  while the playbook guides us through the necessary steps to effectively respond to the security incident.
 
- ### lets solve this chapter lab EventID: 257 - SOC282 - Phishing Alert - Deceptive Mail Detected 
+### lets solve this chapter lab EventID: 257 - SOC282 - Phishing Alert - Deceptive Mail Detected 
  
 1. Clicking on the "Take Ownership" button
 
