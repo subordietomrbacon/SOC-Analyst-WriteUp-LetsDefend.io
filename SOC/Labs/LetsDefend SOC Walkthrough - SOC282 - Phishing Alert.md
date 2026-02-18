@@ -1,7 +1,7 @@
 # LetsDefend SOC Walkthrough - SOC282 - Phishing Alert
 # EventID: 257 - SOC282 Deceptive Mail Detected 
  
-## Clicking on the "Take Ownership" button
+## LETS START
 
 ![alt text](../Assets/lab7/1.png)
 ![alt text](../Assets/lab7/2.png)

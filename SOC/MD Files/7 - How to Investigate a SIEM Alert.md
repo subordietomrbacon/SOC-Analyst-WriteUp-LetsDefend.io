@@ -155,3 +155,84 @@ true positive alert !!
 
 
 ## 4) Email Analysis
+
+Fill in the following fields as needed:
+* Sender
+* Recipient
+* Subject
+* Sender IP Address
+* Attachment Name
+* Email Body
+* Date
+* Action
+
+Once you've found the email in question, examine it to find 
+the answers to the last two questions in the first step of the playbook.
+* Is the content of the email suspicious?
+* Are there any attachments?
+
+You can use the following free products/services:
+
+* AnyRun : An interactive malware analysis service, sandbox.
+* VirusTotal : A service that analyzes files and URLs for viruses.
+* URLHouse : A database of malicious URLs.
+* URLScan : A tool for scanning and analyzing websites.
+* HybridAnalysis : A free malware analysis service.Sandbox 
+
+: “ https://app.letsdefend.io/sandbox ”
+
+#### What is the name of the attachment?
+>**ANSWER: free-Coffee.zip**
+#### What is the subject of the email?
+>**ANSWER: Free Coffee Voucher**
+#### When was the email sent?
+>**ANSWER: May, 13, 2024, 09:22 AM**
+
+## 5) Network and Log Analysis
+we check it To determine if the user has executed the file 
+they have downloaded, this step is critical.
+
+
+Determine Access Status:
+* Click the Raw Data button to view the raw log of the specified entry. 
+Determine whether the malicious file or URL was accessed.
+
+Threat Intel
+* analyze Indicators of Compromise (IOCs). This tab aggregates data from various threat intelligence sources to 
+identify malicious IP addresses, domains, or URLs. Here you 
+can search for the IOCs you've found during your investigation.
+
+#### What is the IP address of the Felix host?
+>**ANSWER: 172.16.20.151**
+#### When exactly did Felix download the malicious file?
+>**ANSWER: May, 13, 2024, 12:59 PM**
+#### What is the C2 address?
+>**ANSWER:  37.120.233.226**
+#### What’s the name of the process that communicated with C2?
+>**ANSWER: coffee.exe**
+#### What port did the malware use to communicate?
+>**ANSWER: 3451**
+
+## 6) Endpoint Analysis
+its involves examining the processes and browser activity on the affected endpoints to 
+identify any further indicators of compromise.
+
+* Endpoint Detection and Response (EDR) such as Carbon Black, SentinelOne, CrowdStrike
+
+* Process and network action analysis aims to detect suspicious processes and identify 
+communication with command and control addresses.
+
+Terminal and Browser History:
+* Check the terminal history to identify suspicious commands executed on the host.
+* Examine the browser history to identify any visits to malicious websites or download links.
+
+#### What is the Process ID (PID) of the “coffee.exe”?
+>**Answer: 6697**
+#### What is the “image hash” of the malicious process?
+>**Answer: CD903AD2211CF7D166646D75E57FB866000F4A3B870B5EC759929BE2FD81D334**
+#### How many child processes does “cmd.exe” have?
+>**Answer: 7**
+
+## 7) results 
+#### On the monitoring page, through which channel can you access the official incident report of an alert?
+>**Answer: Closed alerts**
