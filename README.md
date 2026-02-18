@@ -25,7 +25,11 @@ The repository is organized into structured modules, following the SOC Analyst l
 |   |
 |   └── Labs
 |       |    
-|       └── 1 - SOC282 - Phishing Alert
+|       ├── 1 - SOC282 - Phishing Alert
+|       └── 2 - 14 - SOC104 - Malware Detected
+|
+|
+|
 |
 ├── LICENSE                          # MIT License
 └── README.md                        # Project overview and structure
@@ -45,7 +49,7 @@ The repository is organized into structured modules, following the SOC Analyst l
 ## 📝 Labs Covered
 
 ## [1. SOC282 - Phishing Alert](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/Labs/LetsDefend%20SOC%20Walkthrough%20-%20SOC282%20-%20Phishing%20Alert.md)
-
+## [1. 14 - SOC104 - Malware Detected](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/Labs/LetsDefend%20SOC%20Walkthrough%2014%20-%20SOC104%20-%20Malware%20Detected.md)
 
 
 ## 📜 License
