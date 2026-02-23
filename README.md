@@ -21,7 +21,9 @@ The repository is organized into structured modules, following the SOC Analyst l
 |   |   ├── 5 - Detecting Web Attacks
 |   |   ├── 6 - Detecting Web Attacks - 2
 |   |   ├── 7 - How to Investigate a SIEM Alert 
-|   |   └── 8 - Malware Analysis Fundamentals
+|   |   ├── 8 - Malware Analysis Fundamentals
+|   |   └── 9 - Dynamic Malware Analysis
+|   |
 |   |
 |   └── Labs
 |       |    
@@ -30,6 +32,10 @@ The repository is organized into structured modules, following the SOC Analyst l
 |       ├── 3 - 36 - SOC104 - Malware Detected
 |       ├── 4 - 83 - SOC119 - Proxy - Malicious Executable File Detected
 |       └── 5 - 85 - SOC109 - Proxy - Emotet Malware Detected
+|
+|
+|
+|
 |
 ├── LICENSE                          # MIT License
 └── README.md                        # Project overview and structure
@@ -45,7 +51,7 @@ The repository is organized into structured modules, following the SOC Analyst l
 ### [6. Detecting Web Attacks - 2](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/6%20-%20Detecting%20Web%20Attacks%20-%202.md)
 ### [7. How to Investigate a SIEM Alert](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/7%20-%20How%20to%20Investigate%20a%20SIEM%20Alert.md)
 ### [8. Malware Analysis Fundamentals](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/8%20-%20Malware%20Analysis%20Fundamentals.md)
-
+### [9. Dynamic Malware Analysis](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/9%20-%20Dynamic%20Malware%20Analysis.md)
 ## 📝 Labs Covered
 
 ## [1. SOC282 - Phishing Alert](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/Labs/LetsDefend%20SOC%20Walkthrough%20-%20SOC282%20-%20Phishing%20Alert.md)
